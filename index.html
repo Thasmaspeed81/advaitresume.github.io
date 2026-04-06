@@ -2,41 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advait Racheti Portfolio</title>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
-nav {
-  background: #1e293b;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-}
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-section {
-  padding: 50px;
-}
-.card {
-  background: #1e293b;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-}
-img {
-  max-width: 200px;
-  border-radius: 10px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advait Racheti Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -46,18 +15,19 @@ img {
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
   <a href="#certificates">Certificates</a>
+  <a href="#education">Education</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="home">
   <h1>Advait Racheti</h1>
-  <p>B.Tech CSE Student | Future Data Scientist</p>
-  <img src="your-photo.jpg" alt="profile">
+  <p>B.Tech CSE | Future Data Scientist</p>
+  <img src="your-photo.jpg" alt="Profile Photo">
 </section>
 
 <section id="about">
   <h2>About Me</h2>
-  <p>I am a passionate Computer Science student interested in AI, Data Science and Software Development. My goal is to solve real-world problems using technology.</p>
+  <p>I am a passionate Computer Science student focused on AI, Data Science and Software Development. My goal is to solve real-world problems using technology.</p>
 </section>
 
 <section id="skills">
@@ -65,7 +35,7 @@ img {
   <ul>
     <li>Python</li>
     <li>MATLAB</li>
-    <li>AI & Data Science Basics</li>
+    <li>AI & Data Science</li>
   </ul>
 </section>
 
@@ -79,9 +49,19 @@ img {
 
 <section id="certificates">
   <h2>Certificates</h2>
-  <img src="python-cert.jpg">
-  <img src="matlab-cert.jpg">
-  <img src="ai-cert.jpg">
+  <div class="gallery">
+    <img src="python-cert.jpg">
+    <img src="matlab-cert.jpg">
+    <img src="ai-cert.jpg">
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="gallery">
+    <img src="10th.jpg">
+    <img src="12th.jpg">
+  </div>
 </section>
 
 <section id="contact">
@@ -90,9 +70,7 @@ img {
   <p>GitHub: Thasmaspeed81</p>
 </section>
 
-<script>
-console.log("Portfolio Loaded Successfully");
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
