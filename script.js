@@ -1,24 +1,21 @@
-function goToPage(page) {
-  window.location.href = page;
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-// typing effect
-const text = ["Future Data Scientist 🚀", "AI Enthusiast 🤖", "Problem Solver 💡"];
-let i = 0, j = 0, current = "", isDeleting = false;
+const roles = ["Data Scientist 🚀", "AI Developer 🤖", "Problem Solver 💡"];
+let i = 0, j = 0, text = '', deleting = false;
 
 function type() {
-  document.getElementById("typing").textContent = current;
-
-  if (!isDeleting && j < text[i].length) {
-    current += text[i][j++];
-  } else if (isDeleting && j > 0) {
-    current = current.slice(0, --j);
+  document.getElementById('typing').textContent = text;
+  if (!deleting && j < roles[i].length) {
+    text += roles[i][j++];
+  } else if (deleting && j > 0) {
+    text = text.slice(0, --j);
   } else {
-    isDeleting = !isDeleting;
-    if (!isDeleting) i = (i + 1) % text.length;
+    deleting = !deleting;
+    if (!deleting) i = (i + 1) % roles.length;
   }
-
-  setTimeout(type, isDeleting ? 50 : 100);
+  setTimeout(type, deleting ? 50 : 100);
 }
 
 type();
