@@ -1,137 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advait Racheti Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f4f4f4;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 15px 0;
-      text-align: center;
-    }
-    nav {
-      background: #555;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background: #222;
-    }
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-    }
-    h2 {
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-    .project {
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #333;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advait Racheti Portfolio</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+nav {
+  background: #1e293b;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+section {
+  padding: 50px;
+}
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+</style>
 </head>
 <body>
 
-<header>
-  <h1>Advait Racheti</h1>
-  <p>B.Tech CSE Student | Future Data Scientist</p>
-</header>
-
 <nav>
+  <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
-  <a href="#education">Education</a>
   <a href="#certificates">Certificates</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<div class="container" id="about">
-  <h2>About Me</h2>
-  <p>I am Advait Racheti, a passionate Computer Science Engineering student interested in software development, AI, and data science. I aim to solve real-world problems using technology.</p>
-</div>
+<section id="home">
+  <h1>Advait Racheti</h1>
+  <p>B.Tech CSE Student | Future Data Scientist</p>
+  <img src="your-photo.jpg" alt="profile">
+</section>
 
-<div class="container" id="skills">
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate Computer Science student interested in AI, Data Science and Software Development. My goal is to solve real-world problems using technology.</p>
+</section>
+
+<section id="skills">
   <h2>Skills</h2>
   <ul>
     <li>Python</li>
     <li>MATLAB</li>
-    <li>Data Science Basics</li>
-    <li>Problem Solving</li>
+    <li>AI & Data Science Basics</li>
   </ul>
-</div>
+</section>
 
-<div class="container" id="projects">
+<section id="projects">
   <h2>Projects</h2>
-  <div class="project">
-    <h3>Student Assignment Tracker</h3>
-    <p>Python-based system to manage assignments efficiently.</p>
-  </div>
-  <div class="project">
-    <h3>Flood Prevention System</h3>
-    <p>System for monitoring water levels and flood risks.</p>
-  </div>
-  <div class="project">
-    <h3>AI Parking System</h3>
-    <p>Smart parking solution using AI concepts.</p>
-  </div>
-  <div class="project">
-    <h3>AI Career Analyzer</h3>
-    <p>AI tool to analyze careers and resumes (ongoing).</p>
-  </div>
-</div>
+  <div class="card">Student Assignment Tracker</div>
+  <div class="card">Flood Prevention System</div>
+  <div class="card">Smart Parking AI System</div>
+  <div class="card">AI Career Analyzer</div>
+</section>
 
-<div class="container" id="education">
-  <h2>Education</h2>
-  <ul>
-    <li>10th Grade Completed</li>
-    <li>12th Grade Completed</li>
-    <li>JEE Qualified</li>
-    <li>CET Appeared</li>
-  </ul>
-</div>
-
-<div class="container" id="certificates">
+<section id="certificates">
   <h2>Certificates</h2>
-  <ul>
-    <li>Python Certification</li>
-    <li>MATLAB Certification</li>
-    <li>Yuva AI Certification</li>
-    <li>Modern AI Certification</li>
-  </ul>
-</div>
+  <img src="python-cert.jpg">
+  <img src="matlab-cert.jpg">
+  <img src="ai-cert.jpg">
+</section>
 
-<div class="container" id="contact">
+<section id="contact">
   <h2>Contact</h2>
   <p>Email: adiyosr7781@gmail.com</p>
   <p>GitHub: Thasmaspeed81</p>
-</div>
+</section>
 
-<footer>
-  <p>© 2026 Advait Racheti</p>
-</footer>
+<script>
+console.log("Portfolio Loaded Successfully");
+</script>
 
 </body>
 </html>
