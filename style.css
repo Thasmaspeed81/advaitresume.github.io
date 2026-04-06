@@ -1,78 +1,39 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f172a, #020617);
+  font-family: Arial;
   color: white;
+  background: linear-gradient(black, #020617);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
-  background: rgba(0,0,0,0.5);
-  position: sticky;
-  top: 0;
+  padding: 15px;
+  background: #111;
 }
 
-.logo {
-  color: #38bdf8;
-}
-
-.nav-links a {
-  margin: 0 10px;
+nav a {
   color: white;
+  margin: 10px;
   text-decoration: none;
 }
 
 .hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 80px;
-}
-
-.profile {
-  width: 250px;
-  border-radius: 50%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  text-align: center;
+  padding: 100px;
+  background: url('https://i.imgur.com/JYUB0m3.png');
+  background-size: cover;
 }
 
 .card {
-  background: #1e293b;
+  margin: 20px;
   padding: 20px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.gallery img {
-  width: 250px;
-  margin: 10px;
+  background: #1e293b;
   border-radius: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  background: #38bdf8;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 section {
-  padding: 60px;
+  padding: 50px;
   text-align: center;
 }
 
-
-
-console.log("Portfolio Loaded Successfully 🚀");
